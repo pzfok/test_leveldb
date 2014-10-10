@@ -8,7 +8,7 @@ int main()
   leveldb::DB *db;
   leveldb::Options options;
  
-  options.create_if_missing = false;
+  options.create_if_missing = true;
  
   // 開啟數據庫
   leveldb::DB::Open(options, "./testdb", &db);
